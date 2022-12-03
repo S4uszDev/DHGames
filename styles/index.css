@@ -1,0 +1,157 @@
+.hero {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 50vh;
+}
+
+.hero > .container {
+    max-width: 60%;
+    text-align: center;
+}
+
+.hero__icon {
+    color: var(--primary);
+    font-size: 7rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero__title {
+    font-size: 1.9rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.hero__text {
+    margin-bottom: 1rem;
+}
+
+.hero__buttons > .button:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.about {
+    margin: 8rem 0;
+}
+
+.about > .container {
+    display: grid;
+    grid-template-columns: 500px auto;
+    place-items: center;
+    gap: 0.6rem;
+}
+
+.about__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+}
+
+.about > .about__text:not(:last-child) {
+    margin-bottom: 0.2rem;
+}
+
+.about__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.6rem;
+    box-shadow: 3px 3px 10px var(--darkFade);
+}
+
+.games__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 5rem;
+    margin-bottom: 0.3rem;
+}
+
+.games__title, .games__text {
+    text-align: center;
+}
+
+.games__cardsContainer {
+    margin-top: 5rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    row-gap: 5rem;
+    column-gap: 2.5rem;
+}
+
+.games__card {
+    display: grid;
+    grid-template-columns: 200px 2fr;
+    gap: 0.5rem;
+    justify-content: left;
+}
+
+.games__card:hover .games__card__image {
+    transform: translate(-25%, -50%);
+}
+
+.games__card__background {
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.27), transparent);
+    background-color: var(--primary);
+    width: 170px;
+    height: 200px;
+    border-radius: 0.6rem;
+    box-shadow: 2px 2px 7px var(--darkFade);
+}
+
+.games__card__image {
+    position: absolute;
+    max-width: 70%;
+    top: 50%;
+    left: 0;
+    transform: translate(-30%, -50%);
+    transition: ease-in 0.5s;
+} 
+
+.games__card__title {
+    font-size: 1.8rem;
+}
+
+.games__card__price {
+    display: inline-flex;
+    gap: 0.3rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: var(--secondary);
+}
+
+.games__card__price__unity {
+    font-size: 1.1rem;
+    color: currentColor;
+}
+
+.games__card__price__price {
+    color: currentColor;
+}
+
+.games__card__description {
+    margin: 0.5rem 0;
+}
+
+.contact {
+    margin: 5rem 0;
+}
+
+.contact > .divider {
+    margin-bottom: 5rem;
+}
+
+.contact__title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+}
+
+.contact__title, .contact__text {
+    text-align: center;
+}
+
+.contact > .container > .form {
+    margin-top: 2rem;
+}

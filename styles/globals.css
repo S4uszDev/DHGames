@@ -1,0 +1,222 @@
+:root {
+    --primary: #0742F2;
+    --secondary: #0473DB;
+    --dark: #0D0D0D;
+    --darkFade: rgba(13, 13, 13, 0.4);
+    --containerWidth: 1200px;
+    --headerHeight: 69.49px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FCFFF5;
+    font-family: Montserrat, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--containerWidth);
+    padding: 0 2%;
+}
+
+.button {
+    align-items: center;
+    background-color: var(--bgColor);
+    border-radius: 0.3rem;
+    border: 0.1rem solid var(--bgColor);
+    color: var(--ftColor);
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    gap: 0.3rem;
+    padding: 0.7rem 0.9rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: ease-in-out 0.5s;
+}
+
+.button > .bx {
+    font-size: 1.6rem;
+    color: currentColor;
+}
+
+.button:hover {
+    filter: brightness(0.8);
+}
+
+.button--primary {
+    --bgColor: var(--primary);
+    --ftColor: white;
+}
+
+.button--secondary {
+    --bgColor: var(--secondary);
+    --ftColor: white;
+}
+
+.button--border {
+    background-color: transparent;
+    border: 0.1rem solid var(--bgColor);
+    color: var(--bgColor);
+}
+
+.button--border:hover {
+    background-color: var(--bgColor);
+    color: var(--ftColor);
+    filter: none;
+}
+
+.divider {
+    --maxSize: 100%;
+    
+    background-color: var(--color);
+    border-radius: 1rem;
+    border: none;
+    height: 0.09rem;
+    margin: 0 auto;
+    width: var(--maxSize);
+}
+
+.divider--primary {
+    --color: var(--primary);
+}
+
+.divider--secondary {
+    --color: var(--secondary);
+}
+
+.divider--small {
+    --maxSize: 70%;
+}
+
+.header {
+    border-bottom: 0.12rem solid var(--primary);
+}
+
+.header > .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(var(--containerWidth) + 20px);
+    padding: 0.3rem 0;
+}
+
+.header__logo {
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 900;
+    text-decoration: none;
+   
+    transition: ease-in-out 0.3s;
+}
+
+.header__logo:hover {
+    transform: scale(105%);
+}
+
+.header__nav__list {
+    display: flex;
+    gap: 0.2rem;
+    list-style-type: none;
+}
+
+.header__nav__link {
+    color: var(--secondary);
+    font-size: 1.14rem;
+    font-weight: 500;
+    padding: 0.4rem;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.header__nav__link:hover {
+    color: var(--primary);
+}
+
+.header__buttons > .button:not(:first-child) {
+    margin-left: 1rem;
+}
+
+.footer {
+    text-align: center;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2), transparent);
+    background-color: var(--primary);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 1rem 0;
+}
+
+.footer__credits {
+    color: currentColor;
+    font-size: 1rem;
+}
+
+.footer__credits > a, i {
+    color: currentColor;
+    text-underline-offset: 2.3px;
+}
+
+.form {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form__required {
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.form__input[type=email], 
+.form__input[type=text],
+.form__input[type=password],
+.form__textarea {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: 0.12rem solid var(--primary);
+    background-color: transparent;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    resize: none;
+    overflow: auto;
+    outline-color: var(--secondary);
+    outline-offset: 0.12rem;
+    outline-width: 0.5rem;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.infoBox {
+    background-color: var(--bgColor);
+    color: var(--ftColor);
+    padding: 0.9rem 0.7rem;
+    border-radius: 0.3rem;
+    border: 0.12rem solid var(--ftColor);
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+.infoBox--error {
+    --bgColor: #91292D;
+    --ftColor: #D03A41;
+}
+
+.infoBox--success {
+    --bgColor: #3D6A06;
+    --ftColor: #699F10;
+}

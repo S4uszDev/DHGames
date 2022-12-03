@@ -1,0 +1,19 @@
+.register {
+    min-height: calc(100vh - var(--headerHeight));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__plate__title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.register__plate__text {
+    margin: 0.5rem 0 3rem 0;
+}
+
+.register__plate__title, .register__plate__text {
+    text-align: center;
+}
