@@ -50,13 +50,13 @@ if(!empty($_POST)) {
     <link rel="stylesheet" href="styles/registrar.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Nearby - Registro</title>
+    <title>DHGames - Registro</title>
 </head>
 <body>
     <header class="header" id="startHere">
         <div class="container">
             <a class="header__logo" href="/">
-                Nearby
+               DHGames
             </a>
             <nav class="header__nav">
                 <ul class="header__nav__list">
@@ -136,7 +136,7 @@ if(!empty($_POST)) {
     <footer class="footer">
         <p class="footer__credits">
             &copy; 2022 - 
-            <a href="http://twitter.com/SamosMC" target="_blank" rel="noopener noreferrer">SamosMC <i class='bx bxl-twitter' ></i></a>
+            <a href="http://twitter.com/daniloleipnitz12" target="_blank" rel="noopener noreferrer">Danilo Leipnitz <i class='bx bxl-twitter' ></i></a>
         </p>
     </footer>
 </body>
