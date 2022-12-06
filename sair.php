@@ -3,4 +3,4 @@
 require __DIR__.'/app/boot.php';
 
 logout();
-redirect('index.php');
+redirect('index.html');

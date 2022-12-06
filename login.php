@@ -27,7 +27,7 @@ if(!empty($_POST)) {
 
     if(empty($validationError)) {
         generateAuthenticatedSession($userData['id']);
-        redirect('painel.php');
+        redirect('painel.html');
     }
 }
 
@@ -81,10 +81,10 @@ if(!empty($_POST)) {
                 </ul>
             </nav>
             <div class="header__buttons">
-                <a href="login.php" class="header__button button button--primary button--border">
+                <a href="login.html" class="header__button button button--primary button--border">
                     Login
                 </a>
-                <a href="registrar.php" class="header__button button button--primary">
+                <a href="registrar.html" class="header__button button button--primary">
                     Registrar
                 </a>
             </div>

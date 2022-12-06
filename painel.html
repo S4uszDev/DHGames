@@ -2,7 +2,7 @@
 
 require __DIR__.'/app/boot.php';
 
-if(!isLogged()) redirect('login.php');
+if(!isLogged()) redirect('login.html');
 
 $database = connectToDatabase();
 $userId = getAuthenticatedUserId();
